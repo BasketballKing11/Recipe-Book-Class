@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
+/*BASIC STYLES*/
 html {
     width: 100%;
     height: 100%;
@@ -12,13 +13,19 @@ body {
 }
 
 p {
-    font-size: 2opx;
+    font-size: 20px;
+   
 }
 
 h3 {
     font-size: 25px;
 }
 
+.square-bullets {
+    list-style-type: square;
+}
+
+/*STYLES BOOK BACKGROUND*/
 .bookStyling {
     position: relative;
     display: flex;
@@ -48,6 +55,7 @@ h3 {
     aspect-ratio: 317/416;
 }
 
+/*NAVBAR STYLING*/
 header {
     padding: auto;
     border: 5px solid;
@@ -59,7 +67,7 @@ header {
 }
 
 .bg-grey {
-    background-color: grey;
+    background-color: black;
 }
 
 .rounded-md {
@@ -75,8 +83,8 @@ header {
     padding: 1.5em;
     border: 5px solid;
     text-align: center;
-    border-color: aqua;
-    background-color: aqua;
+    border-color: #F9CE6B;
+    background-color: #F9CE6B;
     border-radius: 20px;
     margin-bottom: 1em;
     margin-right: 2.5em;
@@ -106,6 +114,7 @@ header {
     height: 100%;
 }
 
+/*RICHARD's INPUT, BUNCH OF FLEXBOX STUFF SO OUR LAYOUT ACTUALLY WORKS*/
 .flex {
     display: flex;
 }
@@ -139,16 +148,15 @@ header {
     display: none;  /* Safari and Chrome */
 }
 
-.part {
-    opacity: 1;
-    
+/*KEEPS HR TAGS FROM GOING OFF THE PAGE*/
+hr {
+    width: 95%;
+    height: 1%;
+    background-color: #F9CE6B;
+    color: black;
 }
 
-.part2 {
-    background-color: blue;
-    opacity: 40%;
-}
-
+/*ALLOWS WORDS TO STAY ON PAGE*/
 .bookStyling > section {
     width: 100%;
     height: 100%;
@@ -160,6 +168,17 @@ header {
 
 /* ------------- */
 
+/*THESE ARE USELES AT THE MOMENT, PURELY TO MAKE SURE STUFF STAYS IN THE PAGES*/
+.part {
+    opacity: 1;
+}
+
+.part2 {
+    opacity: 1;
+}
+
+
+/*STYING FOR FRONT AND BACK OF BOOK*/
 .bookStyling .coverStyling {
     width: 55%;
     height: 150%;
@@ -200,6 +219,60 @@ h1 {
     z-index: 4
 }
 
+/*MARGINS TO MOVE TEXT AROUND ON PAGES*/
 .margin_left {
     margin-left: 3%;
+}
+
+.margin_right {
+    margin-right: 3%;
+}
+.margin_top {
+    margin-top: 3%;
+}
+
+/*STYLING FOR OUR LOGO*/
+.logo_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 25%;
+    padding: 5em;
+    margin: -2em;
+}
+
+/*EFFECTS NAVBAR LINKS, MAKES THE ENTIRE BOX CLICKABLE*/
+a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    margin: -2em;
+
+}
+
+/*SIZES VIDEOS*/
+iframe {
+    width: 560;
+    height: 315;
+}
+
+/*AUDIO STYLING*/
+audio {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 85%;
+    height: 5%;
+}
+
+/*MAKE IMAGES LOOK ROUND AND CENTERED*/
+.imageRounded {
+    border-radius: 50%;
+}
+
+.imageCentered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

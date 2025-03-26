@@ -5,61 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../recipe.css">
-    <link rel="icon" href="../images/website-icon.svg">
-    <title>homepage</title>
+    <!--Icon for top of page-->
+    <link rel="icon" href="../images/hugeicons--spoon-and-fork.svg">
+    <title>Citations Page</title>
 </head>
 
 <body style="background-image: url(../images/wood-background.jpg); padding: 40px; gap:60px;" class="flex flex-row size-full box-border">
+    <!--NAV-->
     <nav class="h-full bg-grey rounded-md overflow-y-scroll no-scrollbar" style="width: 300px;">
         <a href="../home/home.html" class="logo">
-            <img class="logo_img" src="../images/logo-removebg-preview.png"  alt="logo">
+            <img class="logo_img" src="../images/hugeicons--spoon-and-fork.svg"  alt="logo">
         </a>
         <ul class="nav_list">
             <li class="nav_item">
-                <a href="../recipe1/recipe1.html" class="nav_link">Recipe 1</a>
+                <a href="../recipe/recipe1.html" class="nav_link">Generic Brand Burger</a>
             </li>
             <li class="nav_item">
-                <a href="../recipe2/recipe2.html" class="nav_link">Recipe 2</a>
+                <a href="../recipe/recipe2.html" class="nav_link">Bosnian Cevapi</a>
             </li>
             <li class="nav_item">
-                <a href="../recipe3/recipe3.html" class="nav_link">Chocolate Chip Icing Cookies</a>
+                <a href="../recipe/recipe3.html" class="nav_link">Chocolate Chip Icing Cookies</a>
             </li>
             <li class="nav_item">
-                <a href="../recipe4/recipe4.html" class="nav_link">Recipe 4</a>
+                <a href="../recipe/recipe4.html" class="nav_link">Homemade Chicken Tenders</a>
             </li>
             <li class="nav_item">
-                <a href="../recipe5/recipe5.html" class="nav_link">Recipe 5</a>
+                <a href="../recipe/recipe5.html" class="nav_link">Grilled Cheese</a>
             </li>
             <li class="nav_item">
-                <a href="citations.html" class="nav_link">Citations</a>
+                <a href="../citations/citations.html" class="nav_link">Citations</a>
             </li>
         </ul>
     </nav>
-<!--
-    <div style="position: absolute; left: 27%; top: 15%; width: 430px; height: 682px;" >
-        <p style="color: black; width:450px; overflow-wrap: anywhere;" > heheheheheuhfaeuhdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhu</p>
-    </div> -->
-
+    <!--ARTICLE-->
     <article class="size-full box-border" style="padding: 200px">
         <div class="bookStyling size-full flex flex-row">
-            <img class="backdropAlt" src="../images/bookCover.png"/>
+            <img class="backdropAlt" src="../images/bookBackCover.png"/>
 
             <section class="part coverStyling">
                 <h1 class="bookCoverStyling">
-                    Recipe Book
+                    Citations
                 </h1>
-                <h2 class="bookCoverStyling altH2Size">
-                    Eldin S and Trez W 
-                </h2>
-              
-                <img class="fruitsImage" src="../images/fruitsImage.png" alt="a pile of fruits">
-         
+                <!--Tried to make links more visible, something with the color scheme isn't letting me-->
+                <ol>
+                    <li class="bookCoverStyling"> Page 2  -- <a href="https://www.youtube.com/watch?v=vZOvakfqkJg">https://www.youtube.com/watch?v=vZOvakfqkJg</a> </li>
+                    <li class="bookCoverStyling"> Food Pictures  -- <a href="https://www.flickr.com">Flickr</a> </li>
+                    <li class="bookCoverStyling"> Any Type of Seasoning You Can Think Of  -- <a href="https://spicesinc.com/blogs/most-popular-spices-cuisine#:~:text=Allspice%2C%20basil%2C%20bay%20leaves%20%2C,oregano%20(Mediterranean)%20%2C%20paprika%20%2C">Spices Inc</a> </li>
+                    <li class="bookCoverStyling"> More Grilled Cheese Recipies  -- <a href="https://www.allrecipes.com/i-tried-our-most-popular-grilled-cheese-recipes-8757018">allrecipes</a> </li>
+                    <li class="bookCoverStyling"> Food Pictures  -- <a href="https://commons.wikimedia.org">Wikimedia Commons</a> </li>
+                </ol>
+                <!--Copyright-->
+                <p class="bookCoverStyling" style="margin-top: 50%;">
+                    <strong>Rights Reserved &copy; 2025</strong>
+                </p>
             </section>
          
         </div>
     </article>
 
-    
+        <!--Doesn't make much sense in the context of our design to have a footer-->
 </body>
 
 </html>
